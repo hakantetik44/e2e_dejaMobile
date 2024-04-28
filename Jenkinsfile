@@ -6,21 +6,9 @@ pipeline {
             steps {
                 script {
                     echo 'Installing dependencies...'
-
-                    // JDK 21 kurulumu
-                    sh '''
-                        wget https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_osx-x64_bin.tar.gz
-                        tar -xzf openjdk-11.0.2_osx-x64_bin.tar.gz
-                        export JAVA_HOME=$PWD/jdk-11.0.2
-                        export PATH=$JAVA_HOME/bin:$PATH
-                    '''
-
-                    // Maven kurulumu
-                    sh 'wget https://mirror.olnevhost.net/pub/apache/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz'
-                    sh 'tar -xzf apache-maven-3.8.4-bin.tar.gz'
-                    sh 'export PATH=$PWD/apache-maven-3.8.4/bin:$PATH'
-
-                    // Appium kurulumu
+                    sh 'brew update'
+                    sh 'brew install maven'
+                    sh 'brew install openjdk@21'
                     sh 'npm install -g appium'
                 }
             }
@@ -29,11 +17,10 @@ pipeline {
             steps {
                 script {
                     echo 'Cloning repository...'
-                    git branch: 'main', url: 'https://github.com/hakantetik44/e2e_dejaMobile.git'
+                    git branch: 'main', credentialsId: 'e4c9fc0d-345b-4e30-922c-6adfe86b6541', url: 'https://github.com/hakantetik44/e2e_dejaMobile.git'
                 }
             }
         }
-
         stage('Start Appium Server') {
             steps {
                 script {
@@ -43,12 +30,10 @@ pipeline {
                 }
             }
         }
-        stage('Run Appium Tests') {
+        stage('Run Cucumber Tests') {
             steps {
                 script {
-                    echo 'Running Appium tests...'
-
-                    // Maven ile testlerin çalıştırılması
+                    echo 'Running Cucumber tests...'
                     sh 'mvn test'
                 }
             }
@@ -57,7 +42,6 @@ pipeline {
             steps {
                 script {
                     echo 'Deploying...'
-                    // Deploy işlemleri burada gerçekleştirilebilir, eğer varsa
                 }
             }
         }
@@ -68,8 +52,6 @@ pipeline {
             script {
                 echo 'Cleaning up...'
 
-                // Sonuçları temizle
-                cleanWs()
             }
         }
     }
