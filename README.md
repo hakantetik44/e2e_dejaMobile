@@ -33,7 +33,4 @@ Ce projet est un projet de test mobile qui vise à développer des tests pour le
 **POM.XML (e2e_dejaMobile)**
 Ce fichier POM (Project Object Model) est utilisé avec Apache Maven pour gérer les dépendances et la configuration du projet. Il définit le groupe d'artefacts, l'identifiant d'artefact et la version du projet. De plus, il spécifie les versions des dépendances telles que Selenium, Cucumber et Appium, nécessaires pour l'exécution des tests. Les plugins Maven sont également configurés ici pour l'exécution des tests et la génération de rapports.
 
-# e2e_dejaMobile
-# e2e_dejaMobile
-# e2e_dejaMobile
-# e2e_dejaMobile
+
