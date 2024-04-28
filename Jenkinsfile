@@ -8,9 +8,8 @@ pipeline {
                     echo 'Installing dependencies...'
                                 sh 'brew update'
                                 sh 'brew install maven'
-                                // OpenJDK 22 yerine mevcut olan OpenJDK sürümünü yükleyin ve JAVA_HOME'u bu sürümün yüklendiği dizine ayarlayın
-                                sh 'brew install openjdk@11' // Örnek olarak OpenJDK 11 sürümünü yükleyin
-                                env.JAVA_HOME = '/usr/local/opt/openjdk@11' // OpenJDK 11'in yüklendiği dizini belirtin
+                                sh 'brew install openjdk@21'
+                                env.JAVA_HOME = '/usr/local/opt/openjdk@21'
                                 sh 'npm install -g appium'
                 }
             }
