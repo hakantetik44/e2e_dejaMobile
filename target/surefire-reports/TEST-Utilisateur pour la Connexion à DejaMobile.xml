@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Utilisateur pour la Connexion à DejaMobile" time="79.735" tests="4" errors="2" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/hakan/IdeaProjects/e2e_dejaMobile/target/test-classes:/Users/hakan/IdeaProjects/e2e_dejaMobile/target/classes:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.11.0/selenium-remote-driver-4.11.0.jar:/Users/hakan/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/hakan/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/hakan/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/hakan/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/hakan/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/hakan/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/hakan/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/hakan/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/hakan/.m2/repository/io/netty/netty-buffer/4.1.92.Final/netty-buffer-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-codec-http/4.1.92.Final/netty-codec-http-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-codec/4.1.92.Final/netty-codec-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-handler/4.1.92.Final/netty-handler-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-common/4.1.92.Final/netty-common-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.92.Final/netty-transport-classes-epoll-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.92.Final/netty-transport-classes-kqueue-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-native-epoll/4.1.92.Final/netty-transport-native-epoll-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.92.Final/netty-transport-native-kqueue-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.92.Final/netty-transport-native-unix-common-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport/4.1.92.Final/netty-transport-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-resolver/4.1.92.Final/netty-resolver-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-api/1.26.0/opentelemetry-api-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-context/1.26.0/opentelemetry-context-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.26.0/opentelemetry-exporter-logging-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.26.0/opentelemetry-sdk-metrics-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.26.0-alpha/opentelemetry-extension-incubator-1.26.0-alpha.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.26.0-alpha/opentelemetry-sdk-logs-1.26.0-alpha.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.26.0-alpha/opentelemetry-api-logs-1.26.0-alpha.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.26.0-alpha/opentelemetry-api-events-1.26.0-alpha.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.26.0/opentelemetry-sdk-common-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.26.0/opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.26.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.26.0/opentelemetry-sdk-trace-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.26.0/opentelemetry-sdk-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.26.0-alpha/opentelemetry-semconv-1.26.0-alpha.jar:/Users/hakan/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/hakan/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/hakan/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/hakan/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/hakan/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/hakan/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/hakan/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/hakan/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-http/4.11.0/selenium-http-4.11.0.jar:/Users/hakan/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-json/4.11.0/selenium-json-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.11.0/selenium-manager-4.11.0.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-picocontainer/7.12.0/cucumber-picocontainer-7.12.0.jar:/Users/hakan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/hakan/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-plugin/7.12.0/cucumber-plugin-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-java/7.12.0/cucumber-java-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-junit/7.12.0/cucumber-junit-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-core/7.12.0/cucumber-core-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-gherkin/7.12.0/cucumber-gherkin-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.12.0/cucumber-gherkin-messages-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/hakan/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/hakan/.m2/repository/io/cucumber/tag-expressions/5.0.1/tag-expressions-5.0.1.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/Users/hakan/.m2/repository/io/cucumber/datatable/7.12.0/datatable-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/docstring/7.12.0/docstring-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/html-formatter/20.3.0/html-formatter-20.3.0.jar:/Users/hakan/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/hakan/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-java/4.11.0/selenium-java-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.11.0/selenium-chrome-driver-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.11.0/selenium-chromium-driver-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v113/4.11.0/selenium-devtools-v113-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v114/4.11.0/selenium-devtools-v114-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v115/4.11.0/selenium-devtools-v115-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.11.0/selenium-devtools-v85-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.11.0/selenium-edge-driver-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.11.0/selenium-firefox-driver-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.11.0/selenium-ie-driver-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.11.0/selenium-safari-driver-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-support/4.11.0/selenium-support-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-api/4.11.0/selenium-api-4.11.0.jar:/Users/hakan/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/hakan/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/hakan/.m2/repository/io/appium/java-client/8.6.0/java-client-8.6.0.jar:/Users/hakan/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/hakan/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/hakan/.m2/repository/commons-io/commons-io/2.14.0/commons-io-2.14.0.jar:/Users/hakan/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/hakan/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/Users/hakan/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar:/Users/hakan/.m2/repository/net/masterthought/cucumber-reporting/5.7.5/cucumber-reporting-5.7.5.jar:/Users/hakan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.2/jackson-databind-2.13.2.2.jar:/Users/hakan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/hakan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/hakan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.2/jackson-datatype-jsr310-2.13.2.jar:/Users/hakan/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/Users/hakan/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/hakan/.m2/repository/joda-time/joda-time/2.12.2/joda-time-2.12.2.jar:/Users/hakan/.m2/repository/org/codehaus/plexus/plexus-utils/3.5.0/plexus-utils-3.5.0.jar:/Users/hakan/.m2/repository/org/jsoup/jsoup/1.15.4/jsoup-1.15.4.jar:/Users/hakan/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20220608.1/owasp-java-html-sanitizer-20220608.1.jar:/Users/hakan/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/hakan/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/hakan/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/hakan/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/hakan/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/hakan/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/hakan/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/hakan/.m2/repository/org/openstreetmap/osmosis/osmosis-tagfilter/0.49.2/osmosis-tagfilter-0.49.2.jar:/Users/hakan/.m2/repository/org/openstreetmap/osmosis/osmosis-core/0.49.2/osmosis-core-0.49.2.jar:/Users/hakan/.m2/repository/net/sf/jpf/jpf/1.5/jpf-1.5.jar:/Users/hakan/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.boot.library.path" value="/Users/hakan/Library/Java/JavaVirtualMachines/openjdk-22.0.1/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/hakan/IdeaProjects/e2e_dejaMobile/target/surefire/surefirebooter-20240428184128166_3.jar /Users/hakan/IdeaProjects/e2e_dejaMobile/target/surefire 2024-04-28T18-41-27_475-jvmRun1 surefire-20240428184128166_1tmp surefire_0-20240428184128166_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/hakan/IdeaProjects/e2e_dejaMobile/target/test-classes:/Users/hakan/IdeaProjects/e2e_dejaMobile/target/classes:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.11.0/selenium-remote-driver-4.11.0.jar:/Users/hakan/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/hakan/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/hakan/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/hakan/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/hakan/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/hakan/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/hakan/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/hakan/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/hakan/.m2/repository/io/netty/netty-buffer/4.1.92.Final/netty-buffer-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-codec-http/4.1.92.Final/netty-codec-http-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-codec/4.1.92.Final/netty-codec-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-handler/4.1.92.Final/netty-handler-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-common/4.1.92.Final/netty-common-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.92.Final/netty-transport-classes-epoll-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.92.Final/netty-transport-classes-kqueue-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-native-epoll/4.1.92.Final/netty-transport-native-epoll-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.92.Final/netty-transport-native-kqueue-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.92.Final/netty-transport-native-unix-common-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport/4.1.92.Final/netty-transport-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-resolver/4.1.92.Final/netty-resolver-4.1.92.Final.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-api/1.26.0/opentelemetry-api-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-context/1.26.0/opentelemetry-context-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.26.0/opentelemetry-exporter-logging-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.26.0/opentelemetry-sdk-metrics-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.26.0-alpha/opentelemetry-extension-incubator-1.26.0-alpha.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.26.0-alpha/opentelemetry-sdk-logs-1.26.0-alpha.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.26.0-alpha/opentelemetry-api-logs-1.26.0-alpha.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.26.0-alpha/opentelemetry-api-events-1.26.0-alpha.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.26.0/opentelemetry-sdk-common-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.26.0/opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.26.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.26.0/opentelemetry-sdk-trace-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.26.0/opentelemetry-sdk-1.26.0.jar:/Users/hakan/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.26.0-alpha/opentelemetry-semconv-1.26.0-alpha.jar:/Users/hakan/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/hakan/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/hakan/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/hakan/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/hakan/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/hakan/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/hakan/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/hakan/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/hakan/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-http/4.11.0/selenium-http-4.11.0.jar:/Users/hakan/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-json/4.11.0/selenium-json-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.11.0/selenium-manager-4.11.0.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-picocontainer/7.12.0/cucumber-picocontainer-7.12.0.jar:/Users/hakan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/hakan/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-plugin/7.12.0/cucumber-plugin-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-java/7.12.0/cucumber-java-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-junit/7.12.0/cucumber-junit-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-core/7.12.0/cucumber-core-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-gherkin/7.12.0/cucumber-gherkin-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.12.0/cucumber-gherkin-messages-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/hakan/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/hakan/.m2/repository/io/cucumber/tag-expressions/5.0.1/tag-expressions-5.0.1.jar:/Users/hakan/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/Users/hakan/.m2/repository/io/cucumber/datatable/7.12.0/datatable-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/docstring/7.12.0/docstring-7.12.0.jar:/Users/hakan/.m2/repository/io/cucumber/html-formatter/20.3.0/html-formatter-20.3.0.jar:/Users/hakan/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/hakan/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-java/4.11.0/selenium-java-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.11.0/selenium-chrome-driver-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.11.0/selenium-chromium-driver-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v113/4.11.0/selenium-devtools-v113-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v114/4.11.0/selenium-devtools-v114-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v115/4.11.0/selenium-devtools-v115-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.11.0/selenium-devtools-v85-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.11.0/selenium-edge-driver-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.11.0/selenium-firefox-driver-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.11.0/selenium-ie-driver-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.11.0/selenium-safari-driver-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-support/4.11.0/selenium-support-4.11.0.jar:/Users/hakan/.m2/repository/org/seleniumhq/selenium/selenium-api/4.11.0/selenium-api-4.11.0.jar:/Users/hakan/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/hakan/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/hakan/.m2/repository/io/appium/java-client/8.6.0/java-client-8.6.0.jar:/Users/hakan/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/hakan/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/hakan/.m2/repository/commons-io/commons-io/2.14.0/commons-io-2.14.0.jar:/Users/hakan/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/hakan/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/Users/hakan/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar:/Users/hakan/.m2/repository/net/masterthought/cucumber-reporting/5.7.5/cucumber-reporting-5.7.5.jar:/Users/hakan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.2/jackson-databind-2.13.2.2.jar:/Users/hakan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/hakan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/hakan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.2/jackson-datatype-jsr310-2.13.2.jar:/Users/hakan/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/Users/hakan/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/hakan/.m2/repository/joda-time/joda-time/2.12.2/joda-time-2.12.2.jar:/Users/hakan/.m2/repository/org/codehaus/plexus/plexus-utils/3.5.0/plexus-utils-3.5.0.jar:/Users/hakan/.m2/repository/org/jsoup/jsoup/1.15.4/jsoup-1.15.4.jar:/Users/hakan/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20220608.1/owasp-java-html-sanitizer-20220608.1.jar:/Users/hakan/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/hakan/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/hakan/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/hakan/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/hakan/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/hakan/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/hakan/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/hakan/.m2/repository/org/openstreetmap/osmosis/osmosis-tagfilter/0.49.2/osmosis-tagfilter-0.49.2.jar:/Users/hakan/.m2/repository/org/openstreetmap/osmosis/osmosis-core/0.49.2/osmosis-core-0.49.2.jar:/Users/hakan/.m2/repository/net/sf/jpf/jpf/1.5/jpf-1.5.jar:/Users/hakan/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/hakan"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="/Users/hakan/Library/Java/JavaVirtualMachines/openjdk-22.0.1/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/hakan/IdeaProjects/e2e_dejaMobile"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/hakan/IdeaProjects/e2e_dejaMobile/target/surefire/surefirebooter-20240428184128166_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="22.0.1+8-16"/>
+    <property name="user.name" value="hakan"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.4.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/hakan/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/nv/1qs4y8qx39lcwpvvbc0cxwm80000gn/T/"/>
+    <property name="idea.version" value="2024.1"/>
+    <property name="java.version" value="22.0.1"/>
+    <property name="user.dir" value="/Users/hakan/IdeaProjects/e2e_dejaMobile"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/hakan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.1+8-16"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="Tentative de connexion avec un mot de passe invalide" classname="Utilisateur pour la Connexion à DejaMobile" time="18.764">
+    <error message="Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up &#10;Host info: host: &apos;MBP-de-macbook.lan&apos;, ip: &apos;2001:861:42c0:bf00:c8b0:fac5:93ca:52e0%en0&apos;&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.4.1&apos;, java.version: &apos;22.0.1&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [null, newSession {capabilities=[{appium:noReset=false, appium:newCommandTimeout=600, appium:appActivity=com.dejamobile.cbp.sps.app.mobile.launch.SplashActivity, appium:deviceName=PIXEL, platformName=ANDROID, appium:automationName=UiAutomator2, appium:platformVersion=10.0, appium:appPackage=com.dejamobile.cbp.sps.demo}], desiredCapabilities=Capabilities {appium:appActivity: com.dejamobile.cbp.sps.app...., appium:appPackage: com.dejamobile.cbp.sps.demo, appium:automationName: UiAutomator2, appium:deviceName: PIXEL, appium:newCommandTimeout: 600, appium:noReset: false, appium:platformVersion: 10.0, platformName: ANDROID}}]&#10;Capabilities {appium:appActivity: com.dejamobile.cbp.sps.app...., appium:appPackage: com.dejamobile.cbp.sps.demo, appium:automationName: UiAutomator2, appium:deviceName: PIXEL, appium:newCommandTimeout: 600, appium:noReset: false, appium:platformVersion: 10.0, platformName: ANDROID}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up 
+Host info: host: 'MBP-de-macbook.lan', ip: '2001:861:42c0:bf00:c8b0:fac5:93ca:52e0%en0'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '22.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=false, appium:newCommandTimeout=600, appium:appActivity=com.dejamobile.cbp.sps.app.mobile.launch.SplashActivity, appium:deviceName=PIXEL, platformName=ANDROID, appium:automationName=UiAutomator2, appium:platformVersion=10.0, appium:appPackage=com.dejamobile.cbp.sps.demo}], desiredCapabilities=Capabilities {appium:appActivity: com.dejamobile.cbp.sps.app...., appium:appPackage: com.dejamobile.cbp.sps.demo, appium:automationName: UiAutomator2, appium:deviceName: PIXEL, appium:newCommandTimeout: 600, appium:noReset: false, appium:platformVersion: 10.0, platformName: ANDROID}}]
+Capabilities {appium:appActivity: com.dejamobile.cbp.sps.app...., appium:appPackage: com.dejamobile.cbp.sps.demo, appium:automationName: UiAutomator2, appium:deviceName: PIXEL, appium:newCommandTimeout: 600, appium:noReset: false, appium:platformVersion: 10.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+	at utilities.Driver.getDriver(Driver.java:34)
+	at pages.DejaMobilePage.<init>(DejaMobilePage.java:13)
+	at stepdefinitions.DejaMobileStep.<init>(DejaMobileStep.java:18)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:54)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:398)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+]]></error>
+    <system-out><![CDATA[
+@smoke @DEJ-4
+Scenario: Tentative de connexion avec un mot de passe invalide &amp#27;[90m# src/test/resources/features/Login.feature:4&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mlutilisateur souhaite se connecter à l'application&amp#27;[0m     &amp#27;[90m# stepdefinitions.DejaMobileStep.lutilisateurSouhaiteSeConnecterALApplication()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up 
+Host info: host: 'MBP-de-macbook.lan', ip: '2001:861:42c0:bf00:c8b0:fac5:93ca:52e0%en0'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '22.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=false, appium:newCommandTimeout=600, appium:appActivity=com.dejamobile.cbp.sps.app.mobile.launch.SplashActivity, appium:deviceName=PIXEL, platformName=ANDROID, appium:automationName=UiAutomator2, appium:platformVersion=10.0, appium:appPackage=com.dejamobile.cbp.sps.demo}], desiredCapabilities=Capabilities {appium:appActivity: com.dejamobile.cbp.sps.app...., appium:appPackage: com.dejamobile.cbp.sps.demo, appium:automationName: UiAutomator2, appium:deviceName: PIXEL, appium:newCommandTimeout: 600, appium:noReset: false, appium:platformVersion: 10.0, platformName: ANDROID}}]
+Capabilities {appium:appActivity: com.dejamobile.cbp.sps.app...., appium:appPackage: com.dejamobile.cbp.sps.demo, appium:automationName: UiAutomator2, appium:deviceName: PIXEL, appium:newCommandTimeout: 600, appium:noReset: false, appium:platformVersion: 10.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+	at utilities.Driver.getDriver(Driver.java:34)
+	at pages.DejaMobilePage.<init>(DejaMobilePage.java:13)
+	at stepdefinitions.DejaMobileStep.<init>(DejaMobileStep.java:18)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:54)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:398)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mil accède à l'application DejaMobile&amp#27;[0m                    &amp#27;[90m# stepdefinitions.DejaMobileStep.ilAccedeALApplicationDejaMobile()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36ml'utilisateur saisit son adresse e-mail valide&amp#27;[0m           &amp#27;[90m# stepdefinitions.DejaMobileStep.lUtilisateurSaisitSonAdresseEMailValide()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36msi l'utilisateur saisit un mot de passe invalide&amp#27;[0m        &amp#27;[90m# stepdefinitions.DejaMobileStep.siLUtilisateurSaisitUnMotDePasseInvalide()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mun message d'erreur saffiche correctement&amp#27;[0m                &amp#27;[90m# stepdefinitions.DejaMobileStep.unMessageDErreurSafficheCorrectement()&amp#27;[0m
+
+    Embedding screenshot [image/png 0 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="Tentative de connexion avec les champs vide" classname="Utilisateur pour la Connexion à DejaMobile" time="16.643">
+    <system-out><![CDATA[
+@smoke @DEJ-5
+Scenario: Tentative de connexion avec les champs vide                &amp#27;[90m# src/test/resources/features/Login.feature:13&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mlutilisateur souhaite se connecter à l'application&amp#27;[0m           &amp#27;[90m# stepdefinitions.DejaMobileStep.lutilisateurSouhaiteSeConnecterALApplication()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mil accède à l'application DejaMobile&amp#27;[0m                          &amp#27;[90m# stepdefinitions.DejaMobileStep.ilAccedeALApplicationDejaMobile()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ml'utilisateur laisse le champ dadresse e-mail vide&amp#27;[0m             &amp#27;[90m# stepdefinitions.DejaMobileStep.lUtilisateurLaisseLeChampDadresseEMailVide()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32ml'utilisateur laisse le champ du mot de passe vide&amp#27;[0m            &amp#27;[90m# stepdefinitions.DejaMobileStep.lUtilisateurLaisseLeChampDuMotDePasseVide()&amp#27;[0m
+expectedText +dejaMobile.textErrorLesChampsVides.getText() = Email invalideEmail invalide
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mun message d'erreur saffiche correctement pour les champs vide&amp#27;[0m &amp#27;[90m# stepdefinitions.DejaMobileStep.unMessageDErreurSafficheCorrectementPourLesChampsVide()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Tentative de connexion avec succes" classname="Utilisateur pour la Connexion à DejaMobile" time="8.844">
+    <system-out><![CDATA[
+@smoke @DEJ-3
+Scenario: Tentative de connexion avec succes                                                &amp#27;[90m# src/test/resources/features/Login.feature:23&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mlutilisateur souhaite se connecter à l'application&amp#27;[0m                                  &amp#27;[90m# stepdefinitions.DejaMobileStep.lutilisateurSouhaiteSeConnecterALApplication()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mil accède à l'application DejaMobile&amp#27;[0m                                                 &amp#27;[90m# stepdefinitions.DejaMobileStep.ilAccedeALApplicationDejaMobile()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mutilisateur voit les champs &amp#27;[0m&amp#27;[32m&amp#27;[1m"Adresse E-mail"&amp#27;[0m&amp#27;[32m And &amp#27;[0m&amp#27;[32m&amp#27;[1m"Mot de passe"&amp#27;[0m&amp#27;[32m sur la page d'accueil&amp#27;[0m &amp#27;[90m# stepdefinitions.DejaMobileStep.utilisateurVoitLesChampsAndSurLaPageDAccueil(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32ml'utilisateur saisit ses informations de connexion&amp#27;[0m                                   &amp#27;[90m# stepdefinitions.DejaMobileStep.lUtilisateurSaisitSesInformationsDeConnexion()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ml'utilisateur se connecte à son compte&amp#27;[0m                                                &amp#27;[90m# stepdefinitions.DejaMobileStep.lUtilisateurSeConnecteASonCompte()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Tentative de connexion avec une adresse e-mail invalide" classname="Utilisateur pour la Connexion à DejaMobile" time="35.484">
+    <error message="Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of &apos;uiautomator2ServerLaunchTimeout&apos; capability &#10;Host info: host: &apos;MBP-de-macbook.lan&apos;, ip: &apos;2001:861:42c0:bf00:c8b0:fac5:93ca:52e0%en0&apos;&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.4.1&apos;, java.version: &apos;22.0.1&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [null, newSession {capabilities=[{appium:noReset=false, appium:newCommandTimeout=600, appium:appActivity=com.dejamobile.cbp.sps.app.mobile.launch.SplashActivity, appium:deviceName=PIXEL, platformName=ANDROID, appium:automationName=UiAutomator2, appium:platformVersion=10.0, appium:appPackage=com.dejamobile.cbp.sps.demo}], desiredCapabilities=Capabilities {appium:appActivity: com.dejamobile.cbp.sps.app...., appium:appPackage: com.dejamobile.cbp.sps.demo, appium:automationName: UiAutomator2, appium:deviceName: PIXEL, appium:newCommandTimeout: 600, appium:noReset: false, appium:platformVersion: 10.0, platformName: ANDROID}}]&#10;Capabilities {appium:appActivity: com.dejamobile.cbp.sps.app...., appium:appPackage: com.dejamobile.cbp.sps.demo, appium:automationName: UiAutomator2, appium:deviceName: PIXEL, appium:newCommandTimeout: 600, appium:noReset: false, appium:platformVersion: 10.0, platformName: ANDROID}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability 
+Host info: host: 'MBP-de-macbook.lan', ip: '2001:861:42c0:bf00:c8b0:fac5:93ca:52e0%en0'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '22.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=false, appium:newCommandTimeout=600, appium:appActivity=com.dejamobile.cbp.sps.app.mobile.launch.SplashActivity, appium:deviceName=PIXEL, platformName=ANDROID, appium:automationName=UiAutomator2, appium:platformVersion=10.0, appium:appPackage=com.dejamobile.cbp.sps.demo}], desiredCapabilities=Capabilities {appium:appActivity: com.dejamobile.cbp.sps.app...., appium:appPackage: com.dejamobile.cbp.sps.demo, appium:automationName: UiAutomator2, appium:deviceName: PIXEL, appium:newCommandTimeout: 600, appium:noReset: false, appium:platformVersion: 10.0, platformName: ANDROID}}]
+Capabilities {appium:appActivity: com.dejamobile.cbp.sps.app...., appium:appPackage: com.dejamobile.cbp.sps.demo, appium:automationName: UiAutomator2, appium:deviceName: PIXEL, appium:newCommandTimeout: 600, appium:noReset: false, appium:platformVersion: 10.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+	at utilities.Driver.getDriver(Driver.java:34)
+	at pages.DejaMobilePage.<init>(DejaMobilePage.java:13)
+	at stepdefinitions.DejaMobileStep.<init>(DejaMobileStep.java:18)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:54)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:398)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+]]></error>
+    <system-out><![CDATA[
+@smoke @DEJ-6
+Scenario: Tentative de connexion avec une adresse e-mail invalide &amp#27;[90m# src/test/resources/features/Login.feature:33&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mlutilisateur souhaite se connecter à l'application&amp#27;[0m        &amp#27;[90m# stepdefinitions.DejaMobileStep.lutilisateurSouhaiteSeConnecterALApplication()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability 
+Host info: host: 'MBP-de-macbook.lan', ip: '2001:861:42c0:bf00:c8b0:fac5:93ca:52e0%en0'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '22.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=false, appium:newCommandTimeout=600, appium:appActivity=com.dejamobile.cbp.sps.app.mobile.launch.SplashActivity, appium:deviceName=PIXEL, platformName=ANDROID, appium:automationName=UiAutomator2, appium:platformVersion=10.0, appium:appPackage=com.dejamobile.cbp.sps.demo}], desiredCapabilities=Capabilities {appium:appActivity: com.dejamobile.cbp.sps.app...., appium:appPackage: com.dejamobile.cbp.sps.demo, appium:automationName: UiAutomator2, appium:deviceName: PIXEL, appium:newCommandTimeout: 600, appium:noReset: false, appium:platformVersion: 10.0, platformName: ANDROID}}]
+Capabilities {appium:appActivity: com.dejamobile.cbp.sps.app...., appium:appPackage: com.dejamobile.cbp.sps.demo, appium:automationName: UiAutomator2, appium:deviceName: PIXEL, appium:newCommandTimeout: 600, appium:noReset: false, appium:platformVersion: 10.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+	at utilities.Driver.getDriver(Driver.java:34)
+	at pages.DejaMobilePage.<init>(DejaMobilePage.java:13)
+	at stepdefinitions.DejaMobileStep.<init>(DejaMobileStep.java:18)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:54)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:398)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mil accède à l'application DejaMobile&amp#27;[0m                       &amp#27;[90m# stepdefinitions.DejaMobileStep.ilAccedeALApplicationDejaMobile()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36ml'utilisateur saisit son adresse e-mail invalide&amp#27;[0m            &amp#27;[90m# stepdefinitions.DejaMobileStep.lUtilisateurSaisitSonAdresseEMailInvalide()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36msi l'utilisateur saisit une mot de passe valide&amp#27;[0m            &amp#27;[90m# stepdefinitions.DejaMobileStep.siLUtilisateurSaisitUneMotDePasseValide()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mun message d'erreur saffiche correctement&amp#27;[0m                   &amp#27;[90m# stepdefinitions.DejaMobileStep.unMessageDErreurSafficheCorrectement()&amp#27;[0m
+
+    Embedding screenshot [image/png 0 bytes]
+
+]]></system-out>
+  </testcase>
+</testsuite>
