@@ -1,6 +1,6 @@
 @smoke
-Feature:
-   @APPSV2-1130
+Feature:Utilisateur pour la Connexion à DejaMobile
+  @DEJ-4
   Scenario: Tentative de connexion avec un mot de passe invalide
     Given lutilisateur souhaite se connecter à l'application
     When il accède à l'application DejaMobile
@@ -9,7 +9,7 @@ Feature:
     And un message d'erreur saffiche correctement
 
 
-   @APPSV2-1131
+  @DEJ-5
   Scenario: Tentative de connexion avec les champs vide
     Given lutilisateur souhaite se connecter à l'application
     When il accède à l'application DejaMobile
@@ -19,7 +19,7 @@ Feature:
 
 
 
-   @APPSV2-1128
+  @DEJ-3
   Scenario:Tentative de connexion avec succes
     Given lutilisateur souhaite se connecter à l'application
     When il accède à l'application DejaMobile
@@ -29,7 +29,7 @@ Feature:
 
 
 
-   @APPSV2-1129
+  @DEJ-6
   Scenario: Tentative de connexion avec une adresse e-mail invalide
     Given lutilisateur souhaite se connecter à l'application
     When il accède à l'application DejaMobile
