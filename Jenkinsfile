@@ -7,9 +7,13 @@ pipeline {
                 script {
                     echo 'Installing dependencies...'
 
-                    sh 'brew update'
+                    // JDK 21 kurulumu
+                    sh 'brew install openjdk@21'
+
+                    // Maven kurulumu
                     sh 'brew install maven'
-                    sh 'brew install openjdk@8'
+
+                    // Appium kurulumu
                     sh 'npm install -g appium'
                 }
             }
@@ -18,7 +22,7 @@ pipeline {
             steps {
                 script {
                     echo 'Cloning repository...'
-                    git branch: 'main', credentialsId: 'e4c9fc0d-345b-4e30-922c-6adfe86b6541', url: 'https://github.com/hakantetik44/e2e_BedrockCucumber.git'
+                    git branch: 'main', url: 'https://github.com/hakantetik44/e2e_dejaMobile.git'
                 }
             }
         }
@@ -32,10 +36,12 @@ pipeline {
                 }
             }
         }
-        stage('Run Cucumber Tests') {
+        stage('Run Appium Tests') {
             steps {
                 script {
-                    echo 'Running Cucumber tests...'
+                    echo 'Running Appium tests...'
+
+                    // Maven ile testlerin çalıştırılması
                     sh 'mvn test'
                 }
             }
@@ -44,6 +50,7 @@ pipeline {
             steps {
                 script {
                     echo 'Deploying...'
+                    // Deploy işlemleri burada gerçekleştirilebilir, eğer varsa
                 }
             }
         }
@@ -54,6 +61,8 @@ pipeline {
             script {
                 echo 'Cleaning up...'
 
+                // Sonuçları temizle
+                cleanWs()
             }
         }
     }
